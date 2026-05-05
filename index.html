@@ -23,6 +23,23 @@
       --dark-soft: #4a4a4a;
       --whatsapp: #25D366;
     }
+    /* marca d'água */
+body::before {
+  content: "GRUPO DGM";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+
+  font-size: 6rem;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.5em;
+
+  color: rgba(255, 255, 255, 0.541);
+
+  pointer-events: none;
+  z-index: 1; /* fica atrás de TUDO */
+}
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
